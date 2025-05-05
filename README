@@ -1,0 +1,56 @@
+Football Player Value & Potential Predictor - Alphonse Otieno
+A Streamlit application for predicting football player transfer values and potential classifications using machine learning models.
+
+Description
+This application helps football scouts, managers, and enthusiasts evaluate players based on key performance metrics. It predicts a player's market value and classifies them into potential categories (Star, Reliable, or Dud) using machine learning.
+
+Features
+Predict player transfer values based on performance statistics
+Classify players into potential categories
+Explore football player data through interactive visualizations
+Compare player predictions with similar players in the database
+Understand model performance and feature importance
+
+Installation
+Clone the repo:
+
+git clone https://github.com/AlphonseOtieno/football-player-predictor.git
+cd football-player-predictor
+Install required packages:
+
+pip install -r requirements.txt
+Create a .streamlit directory and config file:
+
+mkdir -p .streamlit
+echo '[server]\nheadless = true\naddress = "0.0.0.0"\nport = 5000' > .streamlit/config.toml
+Set up Kaggle authentication:
+
+Running the App
+Start the Streamlit server:
+
+streamlit run app.py
+Access the app in your browser at: http://localhost:5000
+
+Project Structure
+app.py: Main application entry point
+utils.py: Utility functions for data processing and model training
+pages/: Streamlit pages for different app sections
+1_Data_Exploration.py: Data visualization and exploration
+2_Model_Performance.py: Model metrics and evaluation
+3_Player_Prediction.py: Player prediction interface
+Data Sources
+The application uses two Kaggle datasets:
+
+Football Players Transfer Value Prediction 2024
+Football Players Datasets 2015-2024
+Data is automatically downloaded when you first run the application.
+
+Technologies Used:
+Python 3.11+
+Streamlit
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+KaggleHub   
