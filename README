@@ -18,7 +18,8 @@ git clone https://github.com/AlphonseOtieno/football-player-predictor.git
 cd football-player-predictor
 Install required packages:
 
-pip install -r requirements.txt
+pip install streamlit pandas numpy matplotlib seaborn scikit-learn kagglehub
+
 Create a .streamlit directory and config file:
 
 mkdir -p .streamlit
